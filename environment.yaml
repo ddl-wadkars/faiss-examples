@@ -1,0 +1,19 @@
+name: faissgpu
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pip
+  - numpy<2
+  - pytorch
+  - torchvision
+  - torchaudio
+  - pytorch-cuda=12.1        # pulls the right CUDA runtime
+  - faiss-gpu                # Step-1 harness uses GPU FAISS
+  - sentence-transformers
+  - transformers
+  - ipykernel
+  - jupyterlab
+
